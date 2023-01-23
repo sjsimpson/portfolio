@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.page-header {
+  // margin-top: 40px;
+  // // margin: 40px 80px;
+  // // font-size: 64px;
+  height: 186px;
+  margin: 0px 40px 24px 40px;
+
+  .page-header-text {
+    font-family: $oswald;
+    // font-family: $sixcaps;
+
+    color: $accent;
+    font-size: 92px;
+    // font-size: 145px;
+    line-height: 112px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  .page-header-divider {
+    border-top: 1px solid $accent;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+}

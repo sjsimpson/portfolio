@@ -1,0 +1,144 @@
+@import '../../../styles/variables.scss';
+
+$hover-color: tint($on-surface-variant, $hover-opacity);
+$active-color: tint($on-surface-variant, $active-opacity);
+
+.tech-item {
+  cursor: pointer;
+  display: flex;
+  border-radius: 12px;
+  margin: 2px;
+
+  height: 108px;
+  width: 108px;
+
+  .state-layer {
+    display: block;
+    height: 108px;
+    width: 108px;
+
+    border-radius: 12px;
+  }
+
+  .tech-item-text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+
+    text-align: center;
+    color: white;
+  }
+
+  .svg-icon-container {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+
+    margin: 16px 34px 8px 30px;
+
+    .svg-icon {
+      display: block;
+
+      height: 100%;
+      width: 100%;
+
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+
+      background-color: white;
+
+      &.javascript {
+        mask-image: url(../../../assets/javascript.svg);
+        -webkit-mask-image: url(../../../assets/javascript.svg);
+      }
+
+      &.react {
+        mask-image: url(../../../assets/react.svg);
+        -webkit-mask-image: url(../../../assets/react.svg);
+      }
+
+      &.node-js {
+        mask-image: url(../../../assets/node-js.svg);
+        -webkit-mask-image: url(../../../assets/node-js.svg);
+      }
+
+      &.python {
+        mask-image: url(../../../assets/python.svg);
+        -webkit-mask-image: url(../../../assets/python.svg);
+      }
+
+      &.typescript {
+        mask-image: url(../../../assets/typescript.svg);
+        -webkit-mask-image: url(../../../assets/typescript.svg);
+      }
+
+      &.html {
+        mask-image: url(../../../assets/html-5.svg);
+        -webkit-mask-image: url(../../../assets/html-5.svg);
+      }
+
+      &.css {
+        mask-image: url(../../../assets/css3.svg);
+        -webkit-mask-image: url(../../../assets/css3.svg);
+      }
+
+      &.sass {
+        mask-image: url(../../../assets/sass.svg);
+        -webkit-mask-image: url(../../../assets/sass.svg);
+      }
+    }
+  }
+
+  &:hover {
+    .state-layer {
+      background-color: $hover-color;
+    }
+  }
+
+  &:active {
+    .state-layer {
+      background-color: $active-color;
+    }
+  }
+
+  &.active {
+    background-color: $hover-color;
+  }
+
+  &:hover,
+  &.active {
+    .javascript {
+      background-color: #f7df1e;
+    }
+
+    .react {
+      background-color: #61dbfb;
+    }
+
+    .node-js {
+      background-color: #68a063;
+    }
+
+    .python {
+      background-color: #4584b6;
+    }
+
+    .typescript {
+      background-color: #3178c6;
+    }
+
+    .html {
+      background-color: #f06529;
+    }
+
+    .css {
+      background-color: #2965f1;
+    }
+
+    .sass {
+      background-color: #c69;
+    }
+  }
+}

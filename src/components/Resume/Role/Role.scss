@@ -1,0 +1,63 @@
+@import '../../../styles/variables.scss';
+
+$hover-color: tint($on-surface-variant, $hover-opacity);
+$active-color: tint($on-surface-variant, $active-opacity);
+
+.role {
+  margin-bottom: 40px;
+
+  .role-header {
+    margin-bottom: 16px;
+
+    .role-description {
+      font-size: 20px;
+      color: $on-primary-container;
+      font-weight: 350;
+      letter-spacing: 0.5px;
+
+      margin-bottom: 4px;
+
+      a {
+        color: $accent;
+        text-decoration: none;
+        border: 1px solid;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 2px 4px;
+
+        &:hover {
+          color: $surface;
+          background-color: $accent;
+          border-color: $accent;
+        }
+      }
+    }
+
+    .date-range {
+      color: $accent;
+      font-family: $novaflat;
+    }
+  }
+
+  .bullet-point {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin-bottom: 8px;
+
+    .bullet-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .material-symbols-outlined {
+      color: $accent;
+      margin-right: 4px;
+
+      font-variation-settings: 'wght' 400, 'opsz' 20;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+
+.content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 100%;
+}
+
+.subnav-container {
+  display: block;
+
+  width: 156px;
+  min-height: 100%;
+  margin: 0px 24px;
+}
+
+.subnav {
+  top: 24px;
+  display: block;
+
+  width: 156px;
+  position: sticky;
+  // height: 100%;
+}
+
+.projects-content {
+  width: calc(100% - 204px);
+  max-width: fit-content;
+  margin-left: 80px;
+}
+
+.subnav-header {
+  font-size: 24px;
+  margin: 0px 16px 8px 16px;
+  color: white;
+}
+
+.indicator {
+  position: absolute;
+
+  height: 36px;
+  width: 156px;
+
+  border: 1px solid $accent;
+  border-radius: 18px;
+
+  transition-duration: 500ms, 200ms;
+  transition-property: transform, opacity, height;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+
+  opacity: 1;
+  z-index: -1;
+
+  .hide {
+    opacity: 0;
+  }
+}

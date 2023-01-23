@@ -1,0 +1,75 @@
+@import '../../../styles/variables.scss';
+
+$hover-color: tint($on-surface-variant, $hover-opacity);
+$active-color: tint($on-surface-variant, $active-opacity);
+
+.subnav-item {
+  cursor: pointer;
+  display: block;
+  align-items: center;
+
+  height: 36px;
+  width: 156px;
+
+  border: none;
+  border-radius: 18px;
+
+  text-decoration: none;
+  transition: .2s;
+
+  .subnav-link {
+    text-decoration: none;
+  }
+
+  .state-layer {
+    height: 100%;
+    width: 100%;
+
+    padding: 8px 16px;
+    border: none;
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .subnav-label {
+    display: block;
+    align-items: center;
+
+    font-size: 14px;
+    font-variation-settings: 'wght' 500;
+    line-height: 20px;
+
+    color: $on-surface-variant;
+    text-decoration: none;
+  }
+
+  &:hover {
+    .state-layer {
+      background-color: $hover-color;
+    }
+  }
+
+  &:active {
+    .state-layer {
+      background-color: $active-color;
+    }
+  }
+
+  &.active {
+    background-color: tint($primary, $hover-opacity);
+
+    &:hover {
+      .state-layer {
+        background-color: $hover-color;
+      }
+    }
+
+    &:active {
+      .state-layer {
+        background-color: $active-color;
+      }
+    }
+  }
+}
