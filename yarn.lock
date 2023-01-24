@@ -2547,8 +2547,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-"m3-react@file:.yalc/m3-react":
-  version "0.3.1"
+m3-react@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/m3-react/-/m3-react-0.3.2.tgz#c002c18f18993d8c51059ed22644a9a72d2efe36"
+  integrity sha512-2kiEgt3L8PiDTQ+60Xk9laTnhP9pPeIQDquic2MMF5SsRtKDLyWmj1GfZuFc5UXqXXUTlDqOqVagqtGZmkl4AQ==
 
 make-dir@^2.1.0:
   version "2.1.0"
