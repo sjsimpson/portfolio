@@ -7,19 +7,26 @@ export const Footer = () => {
         <div className="footer-links-container">
           {/* <div className="footer-link-header">Links</div> */}
           <div className="footer-links">
-            <div className="footer-link">
+            <a
+              href="https://www.linkedin.com/in/spencer-simpson-0b38299b/"
+              target={'_blank'}
+              className="footer-link"
+            >
               <span className="svg-icon-container">
                 <span className="svg-icon linkedin" />
               </span>
               <span className="link-text">LinkedIn</span>
-            </div>
-            <div className="footer-link">
-              {' '}
+            </a>
+            <a
+              href="https://github.com/sjsimpson"
+              target={'_blank'}
+              className="footer-link"
+            >
               <span className="svg-icon-container">
                 <span className="svg-icon github" />
               </span>
               <span className="link-text">GitHub</span>
-            </div>
+            </a>
           </div>
         </div>
         {/* <div className="contact-information"></div> */}

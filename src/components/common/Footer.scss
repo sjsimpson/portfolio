@@ -28,11 +28,13 @@ $border-color: tint($on-surface-variant, $active-opacity);
 
       .footer-link {
         cursor: pointer;
+
         align-items: center;
         display: flex;
         height: 40px;
 
         color: $accent;
+        text-decoration: none;
 
         border: 1px solid $accent;
         border-radius: 20px;
