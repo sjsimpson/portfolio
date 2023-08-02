@@ -1,4 +1,4 @@
-@import '../../../styles/variables.scss';
+@import "../../../../styles/variables.scss";
 
 $hover-color: tint($on-surface-variant, $hover-opacity);
 $active-color: tint($on-surface-variant, $active-opacity);
@@ -50,43 +50,43 @@ $active-color: tint($on-surface-variant, $active-opacity);
       background-color: white;
 
       &.javascript {
-        mask-image: url(../../../assets/javascript.svg);
-        -webkit-mask-image: url(../../../assets/javascript.svg);
+        mask-image: url(../../../../assets/javascript.svg);
+        -webkit-mask-image: url(../../../../assets/javascript.svg);
       }
 
       &.react {
-        mask-image: url(../../../assets/react.svg);
-        -webkit-mask-image: url(../../../assets/react.svg);
+        mask-image: url(../../../../assets/react.svg);
+        -webkit-mask-image: url(../../../../assets/react.svg);
       }
 
       &.node-js {
-        mask-image: url(../../../assets/node-js.svg);
-        -webkit-mask-image: url(../../../assets/node-js.svg);
+        mask-image: url(../../../../assets/node-js.svg);
+        -webkit-mask-image: url(../../../../assets/node-js.svg);
       }
 
       &.python {
-        mask-image: url(../../../assets/python.svg);
-        -webkit-mask-image: url(../../../assets/python.svg);
+        mask-image: url(../../../../assets/python.svg);
+        -webkit-mask-image: url(../../../../assets/python.svg);
       }
 
       &.typescript {
-        mask-image: url(../../../assets/typescript.svg);
-        -webkit-mask-image: url(../../../assets/typescript.svg);
+        mask-image: url(../../../../assets/typescript.svg);
+        -webkit-mask-image: url(../../../../assets/typescript.svg);
       }
 
       &.html {
-        mask-image: url(../../../assets/html-5.svg);
-        -webkit-mask-image: url(../../../assets/html-5.svg);
+        mask-image: url(../../../../assets/html-5.svg);
+        -webkit-mask-image: url(../../../../assets/html-5.svg);
       }
 
       &.css {
-        mask-image: url(../../../assets/css3.svg);
-        -webkit-mask-image: url(../../../assets/css3.svg);
+        mask-image: url(../../../../assets/css3.svg);
+        -webkit-mask-image: url(../../../../assets/css3.svg);
       }
 
       &.sass {
-        mask-image: url(../../../assets/sass.svg);
-        -webkit-mask-image: url(../../../assets/sass.svg);
+        mask-image: url(../../../../assets/sass.svg);
+        -webkit-mask-image: url(../../../../assets/sass.svg);
       }
     }
   }

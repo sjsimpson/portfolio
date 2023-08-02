@@ -14,8 +14,9 @@ $active-color: tint($on-surface-variant, $active-opacity);
       color: $on-primary-container;
       font-weight: 350;
       letter-spacing: 0.5px;
+      line-height: 32px;
 
-      margin-bottom: 4px;
+      margin-bottom: 8px;
 
       a {
         color: $accent;

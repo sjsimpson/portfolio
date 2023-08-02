@@ -1,10 +1,15 @@
 import './TechItem.scss'
 
-import { TechItemProps } from './TechItem.types'
+export interface TechItemProps {
+  name: string
+  icon: string
+  onClick: Function
+  active: boolean
+}
 
 const TechItem = (props: TechItemProps) => {
-  const handleClick = () => {
-    props.onClick()
+  const handleClick = (e: any) => {
+    props.onClick(e)
   }
 
   return (

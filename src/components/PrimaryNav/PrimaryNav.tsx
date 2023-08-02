@@ -77,7 +77,7 @@ const PrimaryNav = () => {
             onClick={() => setShowDrawer(true)}
           />
         }
-        rightSection={<div>right</div>}
+        rightSection={<></>}
       />
 
       {/* Displays when screen size is OVER 768px */}

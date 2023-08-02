@@ -1,0 +1,99 @@
+@import "../../../styles/variables.scss";
+
+$hover-color: tint($on-surface-variant, $hover-opacity);
+$active-color: tint($on-surface-variant, $active-opacity);
+
+// -----------------------------------------------------------------
+// TECH
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tech-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: min-content min-content min-content;
+  margin-bottom: 16px;
+}
+
+.tech-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  border-radius: 24px;
+
+  padding: 16px 16px 24px 24px;
+
+  color: white;
+  background-color: $active-color;
+
+  .tech-description-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin-bottom: 24px;
+
+    .header-text {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: flex-start;
+
+      color: $accent;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .close-button-container {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: flex-end;
+
+      .close-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 32px;
+        width: 32px;
+        border-radius: 24px;
+
+        .material-symbols-outlined {
+          display: block;
+          cursor: pointer;
+        }
+
+        &:hover {
+          background-color: $hover-color;
+        }
+
+        &:active {
+          background-color: $active-color;
+        }
+      }
+    }
+  }
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapse {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 200ms;
+}
+
+
+@media screen and (max-width: 498px) {
+  .tech-description {
+    height: fit-content;
+  }
+
+  .tech-list {
+    width: 100%;
+    grid-template-columns: min-content min-content;
+  }
+}

@@ -16,8 +16,8 @@ const Role = (props: RoleProps) => {
           {props.startDate} - {props.endDate}
         </div>
       </div>
-      {props.bulletPoints.map((description) => (
-        <div className="bullet-point">
+      {props.bulletPoints.map((description, index) => (
+        <div key={index} className="bullet-point">
           <span className="material-symbols-outlined">chevron_right</span>
           <span className="bullet-text">{description}</span>
         </div>
