@@ -13,7 +13,6 @@
 .project-item-content {
   display: flex;
   flex-direction: row;
-  // align-items: center;
 }
 
 .project-image-container {
@@ -30,96 +29,112 @@
   }
 }
 
-.project-text-container {
+.project-text {
+  color: white;
   display: flex;
-  flex: 1 1 auto;
-  order: 1;
+  flex-direction: column;
+  width: 480px;
 
-  .project-text {
+  margin-left: 16px;
+
+  .project-description {
+    display: flex;
+    flex: 1 1 auto;
+    order: -1;
     color: white;
+  }
+
+  .project-links {
     display: flex;
     flex-direction: column;
-    max-width: 480px;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    order: 1;
 
-    margin-left: 16px;
-
-    .project-description {
+    .link-list {
       display: flex;
-      flex: 1 1 auto;
-      order: -1;
-      // flex-direction: column-reverse;
+      flex-direction: row;
+      margin-bottom: 8px;
 
-      // color: $on-surface;
-      color: white;
+      a {
+        display: flex;
+        align-items: center;
+
+        height: 40px;
+        max-width: fit-content;
+
+        padding: 8px 24px 8px 16px;
+        padding: 8px;
+        border: 1px solid $accent;
+        border-radius: 20px;
+        margin-right: 16px;
+
+        color: $accent;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+
+        .svg-icon-container {
+          display: flex;
+          align-items: center;
+
+          height: 24px;
+          width: 24px;
+          // margin-right: 8px;
+
+          .svg-icon {
+            display: block;
+            height: 100%;
+            width: 100%;
+
+            background-color: $accent;
+
+            &.github {
+              mask-image: url(../../../assets/github.svg);
+              -webkit-mask-image: url(../../../assets/github.svg);
+            }
+
+            &.npm {
+              mask-image: url(../../../assets/npm.svg);
+              -webkit-mask-image: url(../../../assets/npm.svg);
+            }
+          }
+        }
+
+        &:hover {
+          background-color: $accent;
+          color: $surface;
+
+          .svg-icon {
+            background-color: $surface;
+          }
+        }
+      }
     }
   }
 }
 
-.project-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 1 1 auto;
-  order: 1;
+@media screen and (max-width: 1480px) {
+  .project-item-content {
+    flex-direction: column;
+  }
 
-  .link-list {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 8px;
+  .project-text {
+    width: 600px;
+    margin: 24px 0px;
+  }
 
-    a {
-      display: flex;
-      align-items: center;
+  .project-description {
+    margin-bottom: 16px;
+  }
+}
 
-      height: 40px;
-      max-width: fit-content;
+@media screen and (max-width: 680px) {
+  .project-image-container {
+    display: none;
+  }
 
-      padding: 8px 24px 8px 16px;
-      padding: 8px;
-      border: 1px solid $accent;
-      border-radius: 20px;
-      margin-right: 16px;
-
-      color: $accent;
-      font-size: 16px;
-      line-height: 24px;
-      text-decoration: none;
-
-      .svg-icon-container {
-        display: flex;
-        align-items: center;
-
-        height: 24px;
-        width: 24px;
-        // margin-right: 8px;
-
-        .svg-icon {
-          display: block;
-          height: 100%;
-          width: 100%;
-
-          background-color: $accent;
-
-          &.github {
-            mask-image: url(../../../assets/github.svg);
-            -webkit-mask-image: url(../../../assets/github.svg);
-          }
-
-          &.npm {
-            mask-image: url(../../../assets/npm.svg);
-            -webkit-mask-image: url(../../../assets/npm.svg);
-          }
-        }
-      }
-
-      &:hover {
-        background-color: $accent;
-        color: $surface;
-
-        .svg-icon {
-          background-color: $surface;
-        }
-      }
-    }
+  .project-text {
+    width: 100%;
   }
 }

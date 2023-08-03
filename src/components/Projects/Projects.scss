@@ -21,7 +21,6 @@
 
   width: 156px;
   position: sticky;
-  // height: 100%;
 }
 
 .projects-content {
@@ -54,5 +53,25 @@
 
   .hide {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .projects-content {
+    width: 100%;
+    max-width: fit-content;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .subnav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .projects-content {
+    margin: 0px 40px;
   }
 }
